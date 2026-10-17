@@ -6,20 +6,20 @@ Fixtures de demostración para FlowGuard: escenarios de pago aprobado, bloqueado
 
 ## Alcance
 
-Según [flowguard-docs/architecture.md § 3](https://github.com/FlowGuard-Hackathon/flowguard-docs/blob/main/architecture.md#3-estructura-del-repositorio):
+Según [flowguard-docs/arquitectura.md § 3](https://github.com/FlowGuard-Hackathon/flowguard-docs/blob/main/arquitectura.md#3-estructura-del-repositorio):
 
 ```
 mocks/
-├── payment-approved.json
-├── payment-blocked.json
-└── investigation-failed.json
+├── pago-aprobado.json
+├── pago-bloqueado.json
+└── investigacion-fallida.json
 ```
 
-Cada fixture debe validar contra los esquemas Zod de `flowguard-src/contracts/` y contra los contratos documentados en [flowguard-docs/api-contracts.md](https://github.com/FlowGuard-Hackathon/flowguard-docs/blob/main/api-contracts.md) — un fixture nunca se presenta como una respuesta generada en vivo (ver [flowguard-docs/demo-script.md § 3](https://github.com/FlowGuard-Hackathon/flowguard-docs/blob/main/demo-script.md#3-plan-de-contingencia-de-la-demo)).
+Cada fixture debe validar contra los esquemas Zod de `flowguard-src/contratos/` y contra los contratos documentados en [flowguard-docs/contratos-api.md](https://github.com/FlowGuard-Hackathon/flowguard-docs/blob/main/contratos-api.md) — un fixture nunca se presenta como una respuesta generada en vivo (ver [flowguard-docs/guion-demo.md § 3](https://github.com/FlowGuard-Hackathon/flowguard-docs/blob/main/guion-demo.md#3-plan-de-contingencia-de-la-demo)).
 
 ## Dependencias de otros repos
 
 - `flowguard-src`: los esquemas contra los que estos fixtures deben validar.
 - `flowguard-app`: los consume en modo mock (Bloque 1 de la implementación).
 
-Este repo todavía no tiene fixtures; está preparado para que Dev 5 empiece a publicarlos siguiendo el Bloque 1 de [flowguard-docs/implementation-checklist.md](https://github.com/FlowGuard-Hackathon/flowguard-docs/blob/main/implementation-checklist.md).
+Este repo todavía no tiene fixtures; está preparado para que Dev 5 empiece a publicarlos siguiendo el Bloque 1 de [flowguard-docs/checklist-implementacion.md](https://github.com/FlowGuard-Hackathon/flowguard-docs/blob/main/checklist-implementacion.md).
